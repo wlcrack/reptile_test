@@ -298,7 +298,6 @@ def crawl_vulid(thread_level_queue, cve_info_queue):
                     request_cnt += 1
                     
                     if request_cnt == 5:
-                        #time.sleep(3)
                         request_cnt = 0
                     
                     id = tup_id[0]
