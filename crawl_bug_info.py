@@ -214,7 +214,7 @@ def crawl_cve_info(cve_info_queue, sqllite_queue):
                     name = item[1].strip()
                     level = item[2]
                     detaile_name = item[3].strip()
-                    cve_url = 'https://172.18.191.103/template/show_vul_desc?id={0}'.format(vul_id)
+                    cve_url = 'https://ip/template/show_vul_desc?id={0}'.format(vul_id)
                     #print(cve_url)
                     
                     #request for 4 times
@@ -305,7 +305,7 @@ def crawl_vulid(thread_level_queue, cve_info_queue):
                     level = tup_id[1]
                     name = tup_id[2]
                     
-                    vul_id_url = 'https://172.18.191.103/template/getTreeHtml?val={0}&temp_id={1}&conditions=is_dangerous=&op_type=showStemp&&checked=true&id={2}&offset=0&limit={3}'.format(type, temp_id_key, id, level)
+                    vul_id_url = 'https://ip/template/getTreeHtml?val={0}&temp_id={1}&conditions=is_dangerous=&op_type=showStemp&&checked=true&id={2}&offset=0&limit={3}'.format(type, temp_id_key, id, level)
                     #print(vul_id_url)
                     
                     response = None
@@ -380,7 +380,7 @@ def crawl_thread_level(catgory_queue, thread_level_queue):
                         request_cnt = 0
                 
                     response = None
-                    thread_lelev_url = 'https://172.18.191.103/template/getTreeHtml?val={0}&temp_id={1}&conditions=is_dangerous=&op_type=showStemp&&checked=true&id={2}&offset=0&limit=3'.format(type, temp_id, id)
+                    thread_lelev_url = 'https://ip/template/getTreeHtml?val={0}&temp_id={1}&conditions=is_dangerous=&op_type=showStemp&&checked=true&id={2}&offset=0&limit=3'.format(type, temp_id, id)
                     #print(thread_lelev_url)
                     
                     try:
@@ -430,7 +430,7 @@ def crawl_catgroy(queue, tempids, vals):
                 #time.sleep(3)
                 reqcnt = 0
             
-            url = 'https://172.18.191.103/template/getTreeHtml?val={0}&temp_id={1}&conditions=is_dangerous=&op_type=showStemp&'.format(item_val, item_tmpid)
+            url = 'https://ip/template/getTreeHtml?val={0}&temp_id={1}&conditions=is_dangerous=&op_type=showStemp&'.format(item_val, item_tmpid)
             
             try:
                 requests.adapters.DEFAULT_RETRIES = 4
