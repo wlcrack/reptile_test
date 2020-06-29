@@ -35,7 +35,7 @@ val = ['System', 'CVE%20Year', 'Services', 'Application', 'Threat', 'Time']
 tmpid_proc1 = [1,2,3,4,8,9,10,11,]
 
 DEFAULT_USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36'
-DEFAULT_COOKIE     = 'csrftoken=SI3SNAxmawfJjBLqB9Onl6lKUadT4wpnIwEBdSizV5W8WR8uTawe2wO8XykxgTMA; sessionid=tclflt1k1ognr1919bz51f64uqgxkjss; left_menustatue_NSFOCUSRSAS=3|0|https://172.18.191.103/template/index/'
+DEFAULT_COOKIE     = 'your self cookie'
 
 headers = {
     "User-Agent": DEFAULT_USER_AGENT,
